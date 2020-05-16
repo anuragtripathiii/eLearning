@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        input[type=text],input[type=password]
+        {
+            width: 60%;
+            padding: 12px 20px;
+            margin: 9px 0px;
+            display: inline-block;
+            border: 1px solid gray;
+            box-sizing: border-box;
+
+        }
+        .loginbutton
+        {
+            background-color: lightblue;
+            color: #fff4f4;
+            padding: 15px 22px ;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 20%;
+        }
+
+        .loginbutton:hover
+        {
+            opacity: 0.8;
+            color: red;
+            width: 200px;
+            transition: width 1s;
+        }
+        .cancelcbtn
+        {
+            color: #fff4f4;
+            background-color: #ff1f33;
+            border: none;
+            margin: 5px 0px;
+            display: inline-block;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            padding: 12px 22px ;
+        }
+        .cancelcbtn:hover
+        {
+            background-color: white;
+            color: #ff1f33;
+        }
+        .imgcontainer
+        {
+            text-align: center;
+            margin: 24px 0 12px 0
+        }
+        img.avatar
+        {
+            width: 30%;
+            border-radius: 50%;
+
+        }
+        .containeruname
+        {
+            padding: 10px;
+        }
+        @media screen and (max-width: 300px) {
+            span.password
+            {
+                display: block;
+                float: none;
+            }
+            .cancelcbtn
+            {
+                width: 100%;
+            }
+        }
+
+
+    </style>
+
+
+
+</head>
+
+
+<body>
+<div class="imgcontainer">
+    <img class="avatar"  src="img_avatar2_copy.png" alt="masters academy">
+    <br>
+    <div class="containeruname"></div>
+    <b>username</b>
+    <br>
+    <input  type="text" placeholder="Enter username" name="uname" required>
+    <br>
+    <b>password</b>
+    <br>
+    <input type="password" placeholder="Enter password" name="passsword" required>
+    <br>
+    <input type="checkbox"checked="checked" name="remember">remember me
+    <br>
+    <button class="loginbutton" type="submit">login</button>
+    <a href="#">forgot password</a>
+    <br>
+    <button class="cancelcbtn" type="button">cancel</button>
+</div>
+</body>
+</html>
